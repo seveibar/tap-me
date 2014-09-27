@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+    <Description about="urn:mozilla:install-manifest">
+        <em:id>you@yourdomain.tld</em:id>
+        <em:name>My Extension</em:name>
+        <em:version>0.1</em:version>
+        <em:optionsURL>chrome://tap-me/content/options.xul</em:optionsURL>
+		  <em:iconURL>chrome://tap-me/skin/logo.png</em:iconURL>
+        <em:targetApplication>
+            <Description>
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+                <em:minVersion>1.5</em:minVersion>
+                <em:maxVersion>3.0.*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+        <em:creator>Kiwi Code Labs</em:creator>
+        <em:description>Notifications from NFC tags.</em:description>
+        <em:homepageURL>http://tap-me.herokuapp.com/</em:homepageURL>
+		  <em:updateURL>http://tap-me.herokuapp.com/update.rdf</em:updateURL>
+    </Description>
+
+</RDF>
