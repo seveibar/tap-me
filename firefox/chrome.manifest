@@ -1,0 +1,3 @@
+content tap-me jar:chrome/tap-me.jar!/content/
+overlay chrome://browser/content/browser.xul chrome://tap-me/content/tap-me.xul
+skin tap-me classic/1.0 jar:chrome/tap-me.jar!/skin/
