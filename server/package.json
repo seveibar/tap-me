@@ -1,13 +1,14 @@
 {
-  "name": "node-js-getting-started",
+  "name": "tap-me",
   "version": "0.1.2",
-  "description": "A sample Node.js app using Express 4",
+  "description": "A notification app for when you are plugged in.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "~4.9.x"
+    "express": "~4.9.x",
+    "socket.io": "~1.1.x"
   },
   "engines": {
     "node": "0.10.x"
