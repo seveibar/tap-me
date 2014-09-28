@@ -13,8 +13,6 @@ if len(sys.argv) == 2:
 else:
     token = hex(random.randrange(0,2 ** 32))[2:]
 
-token = 'cat'
-
 print "Your token is", token
 print "NFC URL", server_url + "/tap/" + token
 
