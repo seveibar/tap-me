@@ -13,7 +13,7 @@ app.get('/', function(request, response) {
 
 app.get('/tap/:token', function (req,res) {
     var token = req.param("token");
-    clients[token] = true;
+    clients[token] = 2;
     res.json({
         message: "Set to True"
     });
@@ -31,7 +31,14 @@ app.get('/poll/:token', function (req,res) {
             message: "Wait"
         });
     }
-    clients[token] = false;
+
+    if(clients[token] ==2){
+        setTimeout(function(){
+            clients[token] = 0;
+        }, 1000);
+        clients[token] = 1;
+    }
+
 });
 
 app.listen(app.get('port'), function() {
