@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "express": "~4.9.x",
-    "socket.io": "~1.1.x"
+    "socket.io": "~1.1.x",
+    "body-parser":"~1.9.x",
+    "validator": "~3.19.1"
   },
   "engines": {
     "node": "0.10.x"
