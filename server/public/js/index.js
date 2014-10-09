@@ -5,8 +5,9 @@ var preorder = $("#preorder");
 var home_div = $("#home-div");
 var about_div = $("#about-div");
 var preorder_div = $("#preorder-div");
+var submit_email = $("#email");
 
-$("#tap-me").click( function () {
+submit_email.click( function () {
     home.removeClass("active");
     about.removeClass("active");
     preorder.removeClass("active");
@@ -43,6 +44,14 @@ about.click( function () {
 });
 
 preorder.click( function () {
+    show_preorder();
+});
+
+$("#home-page-preorder").click(function () {
+    show_preorder();
+});
+
+var show_preorder = function () {
     home.removeClass("active");
     about.removeClass("active");
     preorder.removeClass("active");
@@ -52,9 +61,6 @@ preorder.click( function () {
     about_div.addClass("hidden");
     preorder_div.addClass("hidden");
     preorder_div.toggleClass("hidden");
-});
-var show_preorder = function () {
-
 };
 
 var submit = function(){
@@ -69,9 +75,9 @@ var submit = function(){
             function(data){
                 console.log("Status is: " + data["status"]);
         });
+        $("#email-form").addClass("hidden");
     } else{
         console.log(email + " isn't valid");
         email
     }
-
 };

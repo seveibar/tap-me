@@ -16,7 +16,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('Welcome to Tap Me.')
+  response.send('Welcome to Tap Me.');
 });
 
 app.post('/subscribe', function(req,res){
